@@ -9,7 +9,7 @@ public class PlayerManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InstantiatePlayer();
+        
     }
 
     // Update is called once per frame
@@ -18,12 +18,4 @@ public class PlayerManager : MonoBehaviour
 
     }
 
-    void InstantiatePlayer()
-    {
-        foreach (PlayerInf playerInf in allPlayerInf.allPlayerList)
-        {
-            GameObject player = Instantiate(playerPrefab);
-            player.GetComponent<Player>().PlayerSetting(playerInf);
-        }
-    }
 }

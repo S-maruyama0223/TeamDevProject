@@ -9,7 +9,7 @@ public class EnemyManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InstantiateEnemy();
+        
     }
 
     // Update is called once per frame
@@ -18,12 +18,4 @@ public class EnemyManager : MonoBehaviour
         
     }
 
-    void InstantiateEnemy()
-    {
-        foreach (EnemyInf enemyInf in allEnemyInf.allEnemyList)
-        {
-            GameObject player = Instantiate(enemyPrefab);
-            player.GetComponent<Enemy>().EnemySetting(enemyInf);
-        }
-    }
 }
