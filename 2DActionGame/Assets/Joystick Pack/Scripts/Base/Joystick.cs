@@ -44,6 +44,12 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
             return input;
         }
     }
+    private float distance;
+    public float Distance {
+        get {
+            return this.distance;
+        }
+    }
 
     protected virtual void Start()
     {
@@ -83,13 +89,14 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
 
     protected virtual void HandleInput(float magnitude, Vector2 normalised, Vector2 radius, Camera cam)
     {
-        if (magnitude > deadZone)
-        {
+        if (magnitude > deadZone) {
             if (magnitude > 1)
                 input = normalised;
-        }
-        else
+        } else {
             input = Vector2.zero;
+        }
+        // 最大値をhandleRangeの範囲で取得し、バーチャルパッド無操作時からの距離を算出
+        distance = Vector2.Distance(input * handleRange, Vector2.zero);
     }
 
     private void FormatInput()
@@ -137,6 +144,7 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
     public virtual void OnPointerUp(PointerEventData eventData)
     {
         input = Vector2.zero;
+        distance = 0f;
         handle.anchoredPosition = Vector2.zero;
     }
 
