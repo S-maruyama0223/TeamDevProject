@@ -147,7 +147,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireRate: 0.5
-  nextFireRate: 0
+  nextFireRate: 17.56642
   speed: 15
   attack: 4
-  movementDirection: {x: 0, y: 0}
+  destroyedDelay: 2
+  movementDirection: {x: 0, y: 1}

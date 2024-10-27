@@ -9,6 +9,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] private float nextFireRate;
     [SerializeField] private float speed;
     [SerializeField] private float attack;
+    [SerializeField] private float destroyedDelay;
     [SerializeField] private Vector2 movementDirection;
 
     public float FireRate {
@@ -31,6 +32,12 @@ public class Weapon : MonoBehaviour
         set { attack = value; }
     }
 
+    public float DestroyedDelay {
+        get { return destroyedDelay; }
+        set { destroyedDelay = value; }
+    }
+
+
     public Vector2 MovementDirection {
         get { return movementDirection; }
         set { movementDirection = value; }
@@ -45,6 +52,8 @@ public class Weapon : MonoBehaviour
         GameObject weaponObject = Instantiate(gameObject);
         weaponObject.transform.position = playerPosition;
         MovementDirection = plyaerMovementDirection;
+        NextFireRate = Time.time + FireRate;
+        Destroy(weaponObject, DestroyedDelay);
     }
 
 }
