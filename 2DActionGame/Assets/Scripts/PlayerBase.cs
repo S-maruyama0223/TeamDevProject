@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour{
+public class PlayerBase : MonoBehaviour{
     [SerializeField] protected FloatingJoystick floatingJoystick;
     [SerializeField] private float movementSpeed = 10f;
     virtual protected void Update() {
