@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player2 : Player {
+public class Player2 : PlayerBase {
     /// <summary>
     /// 壁を設置するバーチャルパッドの傾きの閾値
     /// </summary>

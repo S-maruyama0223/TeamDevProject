@@ -31,6 +31,7 @@ public class SpawnEnemy : MonoBehaviour
         Vector2 spawnPosition = new Vector2(xPos, yPos);
         Instantiate(prefab, spawnPosition, Quaternion.identity);
     }
+
     /// <summary>
     /// spawnIntervalの値を変更するためのセッター
     /// </summary>
