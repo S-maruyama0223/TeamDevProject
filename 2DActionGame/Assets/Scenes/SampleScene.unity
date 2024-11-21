@@ -743,6 +743,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floatingJoystick: {fileID: 1550482577}
   movementSpeed: 10
+  autoFireInterval: 1
+  bullet: {fileID: 4283183894023805354, guid: e4fb1c0f2e2af644bbfa8746998161d5, type: 3}
 --- !u!1 &1053850691
 GameObject:
   m_ObjectHideFlags: 0
