@@ -11,6 +11,8 @@ public class Player2 : PlayerBase {
 
     private bool installable = true;
 
+    [SerializeField] private GameObject wall;
+
     // Start is called before the first frame update
     void Start() {
 
@@ -29,6 +31,10 @@ public class Player2 : PlayerBase {
         // バーチャルパッドを閾値以上に傾けた場合に壁を設置する
         if (installable && floatingJoystick.Distance >= INSTALL_WALL_BORDER) {
             Debug.Log("壁を設置");
+            float xPos = transform.position.x;
+            float yPos = transform.position.y;
+            Vector2 spawnPosition = new Vector2(xPos, yPos);
+            Instantiate(wall, spawnPosition, Quaternion.identity);
             installable = false;
         } else if (floatingJoystick.Distance < 1.0) {
             installable = true;
