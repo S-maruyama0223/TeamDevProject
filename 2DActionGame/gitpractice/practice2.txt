@@ -3,5 +3,3 @@ Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 Vivamus auctor, orci nec dapibus facilisis, justo libero viverra sem, non volutpat magna libero in nisl; integer vel nisi id nisl porttitor luctus ut non turpis.
-
-Phasellus interdum sapien eget ipsum dictum, sit amet auctor erat consequat; fusce facilisis magna at neque vehicula, vitae vulputate tortor sollicitudin.
