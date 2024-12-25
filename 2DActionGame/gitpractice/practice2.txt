@@ -5,5 +5,3 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 Vivamus auctor, orci nec dapibus facilisis, justo libero viverra sem, non volutpat magna libero in nisl; integer vel nisi id nisl porttitor luctus ut non turpis.
 
 Phasellus interdum sapien eget ipsum dictum, sit amet auctor erat consequat; fusce facilisis magna at neque vehicula, vitae vulputate tortor sollicitudin.
-
-Aliquam ut sem vitae lorem volutpat suscipit, sed fringilla dolor euismod; nam at urna eget felis cursus aliquam in sit amet magna.
