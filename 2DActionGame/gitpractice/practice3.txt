@@ -4,6 +4,6 @@ Nullam vehicula, elit at posuere sagittis, arcu odio tincidunt elit, in sollicit
 
 Praesent tempor, purus sit amet feugiat pharetra, quam ligula sollicitudin erat, non dictum eros augue non risus.
 
-Integer congue, lectus non auctor pellentesque, velit nulla cursus eros, ac elementum ligula mi sed justo sit amet ultricies libero.
+// 削除しました
 
 Cras venenatis, nulla a blandit scelerisque, orci libero fermentum enim, ut iaculis justo enim vel erat aenean fermentum enim.
