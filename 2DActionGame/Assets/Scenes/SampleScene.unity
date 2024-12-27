@@ -954,6 +954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floatingJoystick: {fileID: 179354963}
   movementSpeed: 10
+  wall: {fileID: 5750401511091618451, guid: f436e8d3cbcb60d409541da4a18baefd, type: 3}
 --- !u!1 &1840353049
 GameObject:
   m_ObjectHideFlags: 0
